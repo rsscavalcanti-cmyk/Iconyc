@@ -1,292 +1,158 @@
 {
-  "logo_src": "assets/logo-system.jpg?v=1",
+  "logo_src": "assets/logo_iconyc_alt.jpg",
   "encarregados": [
     {
       "nome": "Severo (Hidráulica)",
       "tarefas": [
         {
-          "codigo": "T-0101",
-          "titulo": "Instalação de bomba de recalque — Bloco A",
-          "inicio": "16/09/2025",
+          "codigo": "H-0310",
+          "titulo": "Montagem de colunas PPR — Torre B (2º ao 6º)",
+          "inicio": "18/09/2025",
           "prazo_esperado": "22/09/2025",
           "status": "exec",
           "pct": 55,
-          "obs": "Aguardar liberação de shaft",
-          "equipe": { "bombeiros": 2, "ajudantes": 1 }
+          "obs": "Trecho do 5º aguardando acesso."
         },
         {
-          "codigo": "T-0102",
-          "titulo": "Rede de esgoto pavimento térreo",
-          "inicio": "12/09/2025",
-          "prazo_esperado": "19/09/2025",
-          "status": "block",
-          "pct": 20,
-          "obs": "Dependente do corte de piso pela civil"
+          "codigo": "H-0311",
+          "titulo": "Instalação de bombas de recalque — Casa de máquinas",
+          "inicio": "20/09/2025",
+          "prazo_esperado": "25/09/2025",
+          "status": "",
+          "pct": 0
         },
         {
-          "codigo": "T-0103",
-          "titulo": "Teste de estanqueidade — coluna pluvial 3",
-          "inicio": "18/09/2025",
+          "codigo": "H-0302",
+          "titulo": "Teste de estanqueidade — Pluvial bloco A",
+          "inicio": "15/09/2025",
+          "prazo_esperado": "18/09/2025",
+          "status": "done",
+          "pct": 100,
+          "data_conclusao": "18/09/2025"
+        }
+      ]
+    },
+    {
+      "nome": "Karina (Elétrica)",
+      "tarefas": [
+        {
+          "codigo": "E-0420",
+          "titulo": "Lançamento de eletrocalhas — Subsolo A",
+          "inicio": "19/09/2025",
           "prazo_esperado": "23/09/2025",
           "status": "exec",
           "pct": 40
         },
         {
-          "codigo": "T-0104",
-          "titulo": "Instalação de válvula redutora — casa de bombas",
-          "inicio": "05/09/2025",
-          "prazo_esperado": "17/09/2025",
-          "status": "done",
-          "pct": 100,
-          "data_conclusao": "17/09/2025",
-          "obs": "Ajuste fino programado para próxima semana"
-        }
-      ]
-    },
-    {
-      "nome": "Cláudio (Elétrica)",
-      "tarefas": [
-        {
-          "codigo": "T-0201",
-          "titulo": "Lançamento de eletrocalhas — corredor L2",
-          "inicio": "15/09/2025",
-          "prazo_esperado": "21/09/2025",
-          "status": "exec",
-          "pct": 65,
-          "equipe": { "eletricistas": 3, "ajudantes": 1 },
-          "obs": "Faltam suportes na baia 7–10"
-        },
-        {
-          "codigo": "T-0202",
-          "titulo": "Montagem QDL-02 e interligações",
-          "inicio": "10/09/2025",
+          "codigo": "E-0421",
+          "titulo": "Passagem de cabos SPDA — Cobertura Torre A",
+          "inicio": "21/09/2025",
           "prazo_esperado": "24/09/2025",
-          "status": "exec",
-          "pct": 30
-        },
-        {
-          "codigo": "T-0203",
-          "titulo": "Iluminação externa — teste fotocélula",
-          "inicio": "07/09/2025",
-          "prazo_esperado": "18/09/2025",
-          "status": "FINALIZADA",
-          "pct": 100,
-          "finalizado_em": "18/09/2025"
-        },
-        {
-          "codigo": "T-0204",
-          "titulo": "Passagem de cabos SPDA — cobertura",
-          "inicio": "19/09/2025",
-          "prazo_esperado": "26/09/2025",
-          "status": "exec",
-          "pct": 10,
-          "obs": "Aguardando acesso de guindaste"
+          "status": "",
+          "pct": 0
         }
       ]
     },
     {
-      "nome": "Rogério (Apoio Civil)",
+      "nome": "Ítalo (Apoio)",
       "tarefas": [
         {
-          "codigo": "T-0301",
-          "titulo": "Regularização de base para QGBT",
-          "inicio": "14/09/2025",
-          "prazo_esperado": "20/09/2025",
-          "status": "exec",
-          "pct": 50,
-          "equipe": { "pedreiros": 2, "ajudantes": 1 }
-        },
-        {
-          "codigo": "T-0302",
-          "titulo": "Fechamento de shafts nível 2",
+          "codigo": "A-0155",
+          "titulo": "Regularização de alvenaria — Casa de bombas",
           "inicio": "17/09/2025",
-          "prazo_esperado": "25/09/2025",
-          "status": "exec",
-          "pct": 35
-        },
-        {
-          "codigo": "T-0303",
-          "titulo": "Ajuste de ralos lineares",
-          "inicio": "13/09/2025",
-          "prazo_esperado": "19/09/2025",
-          "status": "block",
-          "pct": 15,
-          "obs": "Aguardando material — OC-004"
-        },
-        {
-          "codigo": "T-0304",
-          "titulo": "Concretagem de base para gerador",
-          "inicio": "03/09/2025",
-          "prazo_esperado": "16/09/2025",
-          "status": "done",
-          "pct": 100,
-          "data_conclusao": "16/09/2025"
-        }
-      ]
-    },
-    {
-      "nome": "Priscila (Elétrica/Lógica)",
-      "tarefas": [
-        {
-          "codigo": "T-0401",
-          "titulo": "Cabeamento lógico — salas comerciais",
-          "inicio": "18/09/2025",
-          "prazo_esperado": "27/09/2025",
-          "status": "exec",
-          "pct": 25
-        },
-        {
-          "codigo": "T-0402",
-          "titulo": "Configuração de barramento CSMD",
-          "inicio": "11/09/2025",
           "prazo_esperado": "20/09/2025",
-          "status": "exec",
-          "pct": 70,
-          "obs": "Aguardar envio de firmware"
-        },
-        {
-          "codigo": "T-0403",
-          "titulo": "Teste de luminotécnica — showroom",
-          "inicio": "09/09/2025",
-          "prazo_esperado": "19/09/2025",
-          "status": "exec",
-          "pct": 60
+          "status": "block",
+          "pct": 30,
+          "obs": "Aguardando liberação de material de rejunte."
         }
       ]
     }
   ],
   "suprimentos": {
+    "compradores": ["Juliana Prado", "Henrique Lopes"],
+    "pendencias_teams": { "Juliana Prado": 1, "Henrique Lopes": 2 },
     "requisicoes": [
       {
-        "codigo": "RQ-11305",
-        "numero": "RQ-11305",
-        "responsavel": "Severo",
+        "codigo": "RQ-22101",
+        "numero": "RQ-22101",
+        "responsavel": "Juliana Prado",
         "contrato": "Iconyc",
-        "material": "Condulete 3/4\" alumínio",
-        "aplicacao": "Áreas molhadas",
-        "data": "17/09/2025",
-        "prazo": "22/09/2025",
-        "status": "Em cotação",
-        "obs": "Preferência marca X"
-      },
-      {
-        "codigo": "RQ-11318",
-        "numero": "RQ-11318",
-        "responsavel": "Cláudio",
-        "contrato": "Iconyc",
-        "material": "Eletrocalha 100x50 e suportes",
-        "aplicacao": "Corredor L2",
-        "data": "16/09/2025",
-        "prazo": "21/09/2025",
-        "status": "Aguardando aprovação",
-        "obs": "Projeto revisado 1.2",
-        "obs_comprador": "Fornecedor A com melhor prazo"
-      },
-      {
-        "codigo": "RQ-11327",
-        "numero": "RQ-11327",
-        "responsavel": "Rogério",
-        "contrato": "Iconyc",
-        "material": "Ralo linear 90cm inox",
-        "aplicacao": "Banheiros nível 2",
-        "data": "15/09/2025",
-        "prazo": "20/09/2025",
-        "status": "OC emitida",
-        "obs": "Compatível com piso vinílico"
-      },
-      {
-        "codigo": "RQ-11339",
-        "numero": "RQ-11339",
-        "responsavel": "Priscila",
-        "contrato": "Iconyc",
-        "material": "Patch panel 24p + keystones Cat6",
-        "aplicacao": "Salas comerciais",
+        "material": "Tubos PPR Ø63 e conexões",
+        "aplicacao": "Colunas Torre B",
         "data": "18/09/2025",
-        "prazo": "24/09/2025",
-        "status": "Em cotação"
+        "prazo": "21/09/2025",
+        "status": "Em cotação",
+        "obs": "Cotação com 3 fornecedores"
       },
       {
-        "codigo": "RQ-11342",
-        "numero": "RQ-11342",
-        "responsavel": "Cláudio",
+        "codigo": "RQ-22107",
+        "numero": "RQ-22107",
+        "responsavel": "Henrique Lopes",
         "contrato": "Iconyc",
-        "material": "SPDA — captores e cabos 50mm²",
-        "aplicacao": "Cobertura",
+        "material": "Eletrocalha 200x50 c/ tampa",
+        "aplicacao": "Subsolo A",
         "data": "19/09/2025",
-        "prazo": "26/09/2025",
-        "status": "Aguardando orçamento",
-        "obs": "Incluir conectores bimetálicos"
+        "prazo": "23/09/2025",
+        "status": "Aguardando aprovação",
+        "obs": "Mudança de rota elevou metragem"
+      },
+      {
+        "codigo": "RQ-22112",
+        "numero": "RQ-22112",
+        "responsavel": "Henrique Lopes",
+        "contrato": "Iconyc",
+        "material": "Cabos 4mm e 10mm",
+        "aplicacao": "QDLs Torre A",
+        "data": "",
+        "prazo": "",
+        "status": "",
+        "obs": ""
       }
     ],
     "ocs": [
       {
-        "codigo": "OC-001",
-        "numero": "OC-001",
-        "emissao": "16/09/2025",
-        "fornecedor": "EletroMax",
+        "codigo": "OC-2110",
+        "numero": "OC-2110",
+        "emissao": "19/09/2025",
+        "fornecedor": "MetalFlex",
         "status": "EMITIDA",
-        "previsao": "23/09/2025",
-        "comprador": "Marina",
+        "previsao": "24/09/2025",
+        "comprador": "Henrique",
         "recebido": "",
-        "origem_rq": "RQ-11318",
-        "material": "Eletrocalhas + suportes",
-        "aplicacao": "Corredor L2",
-        "obs_comprador": "Entrega parcial aceita"
+        "origem_rq": "RQ-22107",
+        "material": "Eletrocalhas 200x50",
+        "aplicacao": "Subsolo A",
+        "obs_comprador": "Enviar nota antecipada"
       },
       {
-        "codigo": "OC-002",
-        "numero": "OC-002",
-        "emissao": "15/09/2025",
+        "codigo": "OC-2108",
+        "numero": "OC-2108",
+        "emissao": "17/09/2025",
         "fornecedor": "HidroSul",
-        "status": "EMITIDA",
-        "previsao": "22/09/2025",
-        "comprador": "Felipe",
-        "recebido": "",
-        "origem_rq": "RQ-11305",
-        "material": "Conduletes 3/4\"",
-        "aplicacao": "Áreas molhadas"
+        "status": "recebido",
+        "previsao": "",
+        "comprador": "Juliana",
+        "recebido": "19/09/2025",
+        "origem_rq": "RQ-22101",
+        "material": "Tubos e conexões PPR",
+        "aplicacao": "Colunas Torre B",
+        "obs_comprador": "Recebido parcial — faltam 12 joelhos Ø63"
       },
       {
-        "codigo": "OC-003",
-        "numero": "OC-003",
-        "emissao": "14/09/2025",
-        "fornecedor": "TecNet",
+        "codigo": "OC-2112",
+        "numero": "OC-2112",
+        "emissao": "",
+        "fornecedor": "CabosRio",
         "status": "EMITIDA",
-        "previsao": "25/09/2025",
-        "comprador": "Marina",
+        "previsao": "26/09/2025",
+        "comprador": "Henrique",
         "recebido": "",
-        "origem_rq": "RQ-11339",
-        "material": "Patch panel + keystones",
-        "aplicacao": "TI — salas comerciais",
-        "obs_comprador": "Aguardando NF adiantamento"
-      },
-      {
-        "codigo": "OC-004",
-        "numero": "OC-004",
-        "emissao": "13/09/2025",
-        "fornecedor": "InoxPrime",
-        "status": "EMITIDA",
-        "previsao": "20/09/2025",
-        "comprador": "Felipe",
-        "recebido": "",
-        "origem_rq": "RQ-11327",
-        "material": "Ralos lineares 90cm",
-        "aplicacao": "Banheiros nível 2"
-      },
-      {
-        "codigo": "OC-005",
-        "numero": "OC-005",
-        "emissao": "10/09/2025",
-        "fornecedor": "Alta Energia",
-        "status": "EMITIDA",
-        "previsao": "18/09/2025",
-        "comprador": "Marina",
-        "recebido": "18/09/2025",
-        "origem_rq": "RQ-11298",
-        "material": "Fotocélulas e relés",
-        "aplicacao": "Iluminação externa",
-        "obs_comprador": "Recebido completo"
+        "origem_rq": "RQ-22112",
+        "material": "Cabos 4mm/10mm",
+        "aplicacao": "QDLs Torre A",
+        "obs_comprador": "Solicitar carreteis retornáveis"
       }
     ]
   }
 }
+
