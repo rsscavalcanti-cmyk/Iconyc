@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <h1>Iconyc — Quadro Kanban</h1>
+  <title>Iconyc — Quadro Kanban</title>
   <meta name="description" content="Kanban por encarregado + Suprimentos (dados via JSON externo)." />
   <style>
     :root{
@@ -90,7 +90,7 @@
     <div class="brand">
       <div class="logo-box"><img id="logo" class="logo-img" alt="Logo" /><div id="logoPh" class="logo-ph">LOGO</div></div>
       <div>
-        <h1>Orygem — Quadro Kanban</h1>
+        <h1>Iconyc — Quadro Kanban</h1>
       </div>
     </div>
     <div class="meta">
@@ -131,7 +131,7 @@
     var CONFIG = {
       // Se houver ?data= na URL, usa. Caso contrário, tenta uma lista de caminhos comuns.
       primary_url: (new URLSearchParams(location.search).get('data') || ''),
-      candidate_urls: ['assets/orygem-kanban.json','orygem-kanban.json','assets/data.json','data.json']
+      candidate_urls: ['assets/iconyc-kanban.json','iconyc-kanban.json','assets/data.json','data.json']
     };
 
     // ===== Helpers =====
@@ -353,7 +353,7 @@
         corsTip = '<li>Se o JSON estiver em outro domínio, verifique CORS (<code>Access-Control-Allow-Origin</code>). Prefira mesmo domínio ou GitHub Pages do mesmo repositório.</li>';
       }
       showHints('<b>Não consegui ler o JSON.</b><br><small>'+ (lastErr? lastErr.message : 'sem detalhes') +'</small><ul style="margin:6px 0 0 16px">\
-        <li>Confirme o caminho: <code>?data=assets/orygem-kanban.json</code> (ou o seu).</li>\
+        <li>Confirme o caminho: <code>?data=assets/iconyc-kanban.json</code> (ou o seu).</li>\
         <li>Garanta que o arquivo existe e está público.</li>'+ corsTip +'</ul>');
       return SAMPLE;
     }
@@ -426,7 +426,7 @@
   <!--
   ==========================
   ESQUEMA DO JSON ESPERADO (copie/cole e edite os valores):
-  Salve em: assets/orygem-kanban.json (ou passe ?data=CAMINHO/URL)
+  Salve em: assets/iconyc-kanban.json (ou passe ?data=CAMINHO/URL)
   ==========================
   {
     "logo_src": "assets/logo-system.jpg?v=1",
@@ -438,7 +438,7 @@
     ],
     "suprimentos": {
       "requisicoes": [
-        {"codigo":"RQ-11305","numero":"RQ-11305","responsavel":"Nome","contrato":"Orygem","material":"Condulete","aplicacao":"-","data":"","prazo":"","status":"Em cotação","obs":"…"}
+        {"codigo":"RQ-11305","numero":"RQ-11305","responsavel":"Nome","contrato":"Iconyc","material":"Condulete","aplicacao":"-","data":"","prazo":"","status":"Em cotação","obs":"…"}
       ],
       "ocs": [
         {"codigo":"OC-001","numero":"OC-001","emissao":"","fornecedor":"Fornecedor X","status":"EMITIDA","previsao":"25/09/2025","comprador":"Fulano","recebido":"","origem_rq":"RQ-11305","material":"Material Y","aplicacao":"Uso Z","obs_comprador":"Parcial"}
