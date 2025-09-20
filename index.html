@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Iconyc — Quadro Kanban</title>
+  <title>Orygem — Quadro Kanban</title>
   <meta name="description" content="Kanban por encarregado + Suprimentos (dados via JSON externo)." />
   <style>
     :root{
@@ -90,7 +90,7 @@
     <div class="brand">
       <div class="logo-box"><img id="logo" class="logo-img" alt="Logo" /><div id="logoPh" class="logo-ph">LOGO</div></div>
       <div>
-        <h1>Iconyc — Quadro Kanban</h1>
+        <h1>Orygem — Quadro Kanban</h1>
       </div>
     </div>
     <div class="meta">
@@ -359,7 +359,7 @@
     }
 
     function validateData(data){
-      data = data e typeof data === 'object' ? data : {};
+      data = data && typeof data === 'object' ? data : {};
       data.encarregados = Array.isArray(data.encarregados) ? data.encarregados : [];
       data.suprimentos = data.suprimentos && typeof data.suprimentos === 'object' ? data.suprimentos : {};
       data.suprimentos.requisicoes = Array.isArray(data.suprimentos.requisicoes) ? data.suprimentos.requisicoes : [];
@@ -385,7 +385,7 @@
       // Teste 2 — dLabel hoje
       var td = new Date(); var pad=n=>String(n).padStart(2,'0'); var today = pad(td.getDate())+'/'+pad(td.getMonth()+1)+'/'+td.getFullYear(); ok('dLabel hoje == D-0', dLabel(today) === 'D-0');
       // Teste 3 — urgencyByDate passado
-      var past = new Date(Date.now()-3*DAY); var pds = pad(past.getDate())+'/'+pad(past.getMonth()+1)+'/'+pad(past.getFullYear()); ok('urgencyByDate passado == overdue', urgencyByDate(pds,'')==='overdue');
+      var past = new Date(Date.now()-3*DAY); var pds = pad(past.getDate())+'/'+pad(past.getMonth()+1)+'/'+past.getFullYear(); ok('urgencyByDate passado == overdue', urgencyByDate(pds,'')==='overdue');
       // Teste 4 — prioridade de URLs
       var urls = resolveDataUrls(); ok('resolveDataUrls retorna pelo menos 1 URL', urls.length>0);
       // Teste 5 — validateData estrutura mínima
@@ -399,8 +399,7 @@
 
     // ===== Eventos =====
     document.addEventListener('DOMContentLoaded', function(){
-      boot();
-      document.getElementById('btnTests').addEventListener('click', runTests);
+      boot();document.getElementById('btnTests').addEventListener('click', runTests);
       window.addEventListener('resize', updateHeaderHeights);
       // Upload local (quando file:// ou para testes)
       document.getElementById('fileInput').addEventListener('change', function(ev){
